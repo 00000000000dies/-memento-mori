@@ -9,6 +9,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+.music-link-container {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+.music-btn {
+  display: inline-block;
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.35em;
+  color: #aaa;
+  text-decoration: none;
+  border: 1px solid var(--line, rgba(255, 255, 255, 0.15));
+  background: rgba(10, 10, 10, 0.6);
+  padding: 14px 32px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+.music-btn:hover {
+  color: #fff;
+  border-color: var(--red, #7e0d15);
+  box-shadow: 0 0 25px rgba(126, 13, 21, 0.25);
+  background: rgba(126, 13, 21, 0.08);
+}
+</style>
 </head>
 <body>
 <div class="noise"></div><div class="vignette"></div>
@@ -25,7 +50,12 @@
 <article class="words"><span class="label">02 — FRAGMENTS</span><div class="word-grid"><span>𝕳𝖔𝖕𝖊</span><span>𝕿𝖗𝖚𝖘𝖙</span><span>𝕸𝖊𝖒𝖔𝖗𝖞</span><span>𝕾𝖎𝖑𝖊𝖓𝖈𝖊</span><span>𝕽𝖊𝖌𝖗𝖊𝖙</span><span>𝕱𝖆𝖉𝖊</span></div></article>
 <article><span class="label">03 — LAST WORD</span><p class="secret">“Everyone you trust eventually becomes a memory.”</p><p class="tiny">click the eye</p><button id="eye" class="eye">◉</button></article>
 </div>
-<footer><div><a href="music.html">MUSIC</a><a href="#" data-name="Discord">DISCORD</a><a href="#" data-name="Telegram">TELEGRAM</a><a href="#" data-name="Archive">ARCHIVE</a></div><p>memento mori — remember that you must die.</p></footer>
+
+<div class="music-link-container">
+  <a href="music.html" class="music-btn">☩ MUSIC ARCHIVE ☩</a>
+</div>
+
+<footer><p>memento mori — remember that you must die.</p></footer>
 </section>
 </main>
 <div id="modal" class="modal"><div class="modal-box"><button id="close">×</button><span class="eyebrow">HIDDEN // 333</span><h3>YOU FOUND IT.</h3><p>“Hope is a beautiful lie when you already know the ending.”</p><span class="cursor">_</span></div></div>
